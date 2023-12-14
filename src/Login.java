@@ -38,7 +38,12 @@ public class Login {
 		// Kysy kayttajalta ikä
 		System.out.println("Anna ikäsi: ");
 		int age = scanner.nextInt(); 
-		scanner.nextLine();
+		scanner.nextLine(); 
+		
+		if (age < 12) {
+			System.out.println("Virhe!"); 
+			System.exit(0); 
+		} 
 		
 		// Kysy yrityksen verkkotunnus
 		System.out.println("Anna yrityksesi verkkotunnus (esim: yritys.fi)");
