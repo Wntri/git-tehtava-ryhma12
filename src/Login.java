@@ -35,6 +35,11 @@ public class Login {
 		System.out.println("Anna sukunimesi: ");
 		String sukuNimi = scanner.nextLine();
 		
+		// Kysy kayttajalta ikä
+		System.out.println("Anna ikäsi: ");
+		int age = scanner.nextInt(); 
+		scanner.nextLine();
+		
 		// Kysy yrityksen verkkotunnus
 		System.out.println("Anna yrityksesi verkkotunnus (esim: yritys.fi)");
 		String verkkoTunnus = scanner.nextLine();
